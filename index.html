@@ -645,7 +645,7 @@
         <div class="container">
             <h3 class="centered-title">Entre em Contato</h3>
             <p class="centered-subtitle">Fale com a gente no WhatsApp e receba uma proposta personalizada.</p>
-            <a href="#" class="btn btn-whatsapp" id="open-whatsapp">
+            <a href="https://misterprodutivo.github.io/form-automacao/" class="btn btn-whatsapp" id="open-whatsapp">
                 <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
             </a>
         </div>
@@ -673,33 +673,6 @@
     </div>
 
     <script>
-        const openBtn = document.getElementById('open-whatsapp');
-        const modal = document.getElementById('whatsapp-modal');
-        const closeBtn = document.querySelector('.fechar-modal');
-        const form = document.getElementById('whatsapp-form');
-
-        openBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.classList.remove('hidden');
-        });
-
-        closeBtn.addEventListener('click', () => {
-            modal.classList.add('hidden');
-        });
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const nome = document.getElementById('nome').value.trim();
-            const telefone = document.getElementById('telefone').value.trim();
-            const descricao = document.getElementById('descricao').value.trim();
-
-            const mensagem = `Olá! Me chamo ${nome} e gostaria de automatizar meu negócio. ${descricao ? `\n\n${descricao}` : ''}`;
-
-            const link = `https://wa.me/5541988895553?text=${encodeURIComponent(mensagem)}`;
-            window.open(link, '_blank');
-            modal.classList.add('hidden');
-        });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
